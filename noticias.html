@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Mobile support -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Material Design fonts -->
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+    <link href="/fonts/material-icons.css" rel="stylesheet">
+
+    <script type="text/javascript" src="/js/jquery.min.js"></script>
+    <script type="text/javascript" src="/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/js/material.min.js"></script>
+    <script type="text/javascript" src="/js/ripples.min.js"></script>
+    <link href="/css/custom.css" rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css" />
+
+    <!-- Bootstrap Material Design -->
+    <link href="/css/bootstrap-material-design.min.css" rel="stylesheet">
+    <link href="/css/ripples.min.css" rel="stylesheet">
+
+    <title>GoRunning</title>
+</head>
+<body>
+<div class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-warning-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">GoRunning</a>
+        </div>
+        <div class="navbar-collapse collapse navbar-warning-collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="index.html">Inicio</a></li>
+                <li class="active"><a href="noticias.html">Noticias</a></li>
+                <li class="dropdown">
+                    <a href="nutricion.html" data-target="#" class="dropdown-toggle" data-toggle="dropdown">Nutrición
+                        <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="consejos.html">Consejos</a></li>
+                        <li><a href="dietas.html">Dietas</a></li>
+                        <li><a href="productos.html">Productos</a></li>
+                        <li class="divider"></li>
+                        <li><a href="javascript:void(0)">Separated link</a></li>
+                    </ul>
+                </li>
+                <li><a href="calendario.html">Calendario</a></li>
+                <li><a href="rutas.html">Rutas</a></li>
+                <li><a href="foro.html">Foro</a></li>
+                <li><a href="javascript:void(0)">Link</a></li>
+
+            </ul>
+            <form class="navbar-form navbar-right">
+                <div class="form-group">
+                    <input type="text" class="form-control col-sm-8" placeholder="Buscar">
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<div class="col-md-10 col-md-push-1 hidden-sm" id="breadcrumb">
+    <div class="panel panel-default">
+        <div class="panel-body" id="custom-breadcrumb">
+            <a href="index.html">Inicio</a> / Noticias
+        </div>
+    </div>
+</div>
+<div class="col-md-7 col-md-push-1">
+    <div class="panel panel-primary">
+        <div class="panel-heading"><h3>Noticia destacada</h3></div>
+        <div class="panel-body">
+            <div class="jumbotron" style="background-color:white; padding: 0 0 0 0;">
+                <h2>Inscríbete a la Mitja Marató "Ciudad de Oliva" (Valencia)</h2>
+                <img class="img-responsive"src="/img/maraton.jpg"/>
+                <p><a class="btn btn-primary btn-lg">LEER MÁS</a></p>
+            </div>
+            <div id="source-button" class="btn btn-primary btn-xs" style="display: none;">&lt; &gt;</div>
+        </div>
+    </div>
+</div>
+<div id="tweets" class="col-md-push-1 col-md-3">
+
+    <div class="panel panel-primary">
+        <div class="panel-heading"><h3>Twitter</h3></div>
+        <div class="panel-body">
+            <div class="list-group">
+                <div class="list-group-item">
+                    <div class="row-picture">
+                        <img class="circle" src="http://lorempixel.com/56/56/people/1" alt="icon">
+                    </div>
+                    <div class="row-content">
+                        <h4 class="list-group-item-heading">@usuario</h4>
+                        <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus.<br><small>Hace 2min.</small></p>
+                    </div>
+                </div>
+                <div class="list-group-separator"></div>
+                <div class="list-group-item">
+                    <div class="row-picture">
+                        <img class="circle" src="http://lorempixel.com/56/56/people/9" alt="icon">
+                    </div>
+                    <div class="row-content">
+                        <h4 class="list-group-item-heading">@usuario</h4>
+                        <p class="list-group-item-text">Maecenas sed diam eget risus varius blandit.<br><small>Hace 2h.</small></p>
+                    </div>
+                </div>
+                <div class="list-group-separator"></div>
+                <div class="list-group-item">
+                    <div class="row-picture">
+                        <img class="circle" src="http://lorempixel.com/56/56/people/7" alt="icon">
+                    </div>
+                    <div class="row-content">
+                        <h4 class="list-group-item-heading">@usuario</h4>
+                        <p class="list-group-item-text">Maecenas sed diam eget risus varius blandit.<br><small>Hace 3 días.</small></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="noticias" class="col-md-push-1 col-md-7">
+    <div class="panel panel-primary">
+        <div class="panel-heading"><h3>Más noticias</h3></div>
+        <div class="panel-body">
+            <div class="list-group">
+                <div class="list-group-item">
+                    <div class="row-action-primary">
+                        <i class="material-icons">folder</i>
+                    </div>
+                    <div class="row-content">
+                        <div class="least-content">2m</div>
+                        <h4 class="list-group-item-heading">Noticia 1</h4>
+                        <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus.</p>
+                    </div>
+                </div>
+                <div class="list-group-separator"></div>
+                <div class="list-group-item">
+                    <div class="row-action-primary">
+                        <i class="material-icons">folder</i>
+                    </div>
+                    <div class="row-content">
+                        <div class="least-content">20m</div>
+                        <h4 class="list-group-item-heading">Noticia 2</h4>
+                        <p class="list-group-item-text">Maecenas sed diam eget risus varius blandit.</p>
+                    </div>
+                </div>
+                <div class="list-group-separator"></div>
+                <div class="list-group-item">
+                    <div class="row-action-primary">
+                        <i class="material-icons">folder</i>
+                    </div>
+                    <div class="row-content">
+                        <div class="least-content">2 días</div>
+                        <h4 class="list-group-item-heading">Noticia 3</h4>
+                        <p class="list-group-item-text">Maecenas sed diam eget risus varius blandit.</p>
+                    </div>
+                </div>
+                <div class="list-group-separator"></div>
+
+                <div class="list-group-item">
+                    <div class="row-action-primary">
+                        <i class="material-icons">folder</i>
+                    </div>
+                    <div class="row-content">
+                        <div class="least-content">20 días</div>
+                        <h4 class="list-group-item-heading">Noticia 4</h4>
+                        <p class="list-group-item-text">Maecenas sed diam eget risus varius blandit.</p>
+                    </div>
+                </div>
+                <div class="list-group-separator"></div>
+
+                <div class="list-group-item">
+                    <div class="row-action-primary">
+                        <i class="material-icons">folder</i>
+                    </div>
+                    <div class="row-content">
+                        <div class="least-content">un mes</div>
+                        <h4 class="list-group-item-heading">Noticia 5</h4>
+                        <p class="list-group-item-text">Maecenas sed diam eget risus varius blandit.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':8080/livereload.js?snipver=1"></' + 'script>');</script>
+</body>
+<script>
+    $( document ).ready(function() {
+        $.material.init()
+        console.log( "listo!" );
+    });
+</script>
+</html>

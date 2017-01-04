@@ -1,0 +1,8 @@
+#custom-breadcrumb{
+    padding: 10px;
+    color: #777;
+}
+
+#custom-breadcrumb span {
+    color: #000;
+}

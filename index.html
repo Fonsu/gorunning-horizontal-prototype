@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Mobile support -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Material Design fonts -->
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <script src="/js/jquery.min.js"></script>
+    <script type="text/javascript" src="/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/js/material.min.js"></script>
+    <script type="text/javascript" src="/js/ripples.min.js"></script>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css" />
+
+    <!-- Bootstrap Material Design -->
+    <link href="/css/bootstrap-material-design.css" rel="stylesheet">
+    <link href="/css/ripples.min.css" rel="stylesheet">
+
+    <title>GoRunning</title>
+</head>
+<body>
+<div class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-warning-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">GoRunning</a>
+        </div>
+        <div class="navbar-collapse collapse navbar-warning-collapse">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="index.html">Inicio</a></li>
+                <li><a href="noticias.html">Noticias</a></li>
+                <li class="dropdown">
+                    <a href="#" data-target="#" class="dropdown-toggle" data-toggle="dropdown">Nutrición
+                        <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="consejos.html">Consejos</a></li>
+                        <li><a href="dietas.html">Dietas</a></li>
+                        <li><a href="productos.html">Productos</a></li>
+                        <li class="divider"></li>
+                        <li><a href="javascript:void(0)">Separated link</a></li>
+                    </ul>
+                </li>
+                <li><a href="calendario.html">Calendario</a></li>
+                <li><a href="rutas.html">Rutas</a></li>
+                <li><a href="foro">Foro</a></li>
+                <!--<li class="dropdown">
+                    <a href="index.html" data-target="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown
+                        <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="javascript:void(0)">Action</a></li>
+                        <li><a href="javascript:void(0)">Another action</a></li>
+                        <li><a href="javascript:void(0)">Something else here</a></li>
+                        <li class="divider"></li>
+                        <li class="dropdown-header">Dropdown header</li>
+                        <li><a href="javascript:void(0)">Separated link</a></li>
+                        <li><a href="javascript:void(0)">One more separated link</a></li>
+                    </ul>
+                </li>-->
+            </ul>
+            <form class="navbar-form navbar-right">
+                <div class="form-group">
+                    <input type="text" class="form-control col-sm-8" placeholder="Buscar">
+                </div>
+            </form>
+            <!--<ul class="nav navbar-nav navbar-right">
+                <li><a href="javascript:void(0)">Link</a></li>
+                <li class="dropdown">
+                    <a href="index.html" data-target="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown
+                        <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="javascript:void(0)">Action</a></li>
+                        <li><a href="javascript:void(0)">Another action</a></li>
+                        <li><a href="javascript:void(0)">Something else here</a></li>
+                        <li class="divider"></li>
+                        <li><a href="javascript:void(0)">Separated link</a></li>
+                    </ul>
+                </li>
+            </ul>-->
+        </div>
+    </div>
+</div>
+
+<div id="noticias" class="col-md-push-1 col-md-7">
+    <div class="panel panel-primary">
+        <div class="panel-heading"><h3>Últimas noticias</h3></div>
+        <div class="panel-body">
+            <div class="list-group">
+                <div class="list-group-item">
+                    <div class="row-action-primary">
+                        <i class="material-icons">folder</i>
+                    </div>
+                    <div class="row-content">
+                        <div class="least-content">2m</div>
+                        <h4 class="list-group-item-heading"><a href="#">Noticia 1</a></h4>
+                        <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus.</p>
+                    </div>
+                </div>
+                <div class="list-group-separator"></div>
+                <div class="list-group-item">
+                    <div class="row-action-primary">
+                        <i class="material-icons">folder</i>
+                    </div>
+                    <div class="row-content">
+                        <div class="least-content">20m</div>
+                        <h4 class="list-group-item-heading"><a href="#">Noticia 2</a></h4>
+                        <p class="list-group-item-text">Maecenas sed diam eget risus varius blandit.</p>
+                    </div>
+                </div>
+                <div class="list-group-separator"></div>
+                <div class="list-group-item">
+                    <div class="row-action-primary">
+                        <i class="material-icons">folder</i>
+                    </div>
+                    <div class="row-content">
+                        <div class="least-content">2 días</div>
+                        <h4 class="list-group-item-heading"><a href="#">Noticia 3</a></h4>
+                        <p class="list-group-item-text">Maecenas sed diam eget risus varius blandit.</p>
+                    </div>
+                </div>
+                <div class="list-group-separator"></div>
+
+                <div class="list-group-item">
+                    <div class="row-action-primary">
+                        <i class="material-icons">folder</i>
+                    </div>
+                    <div class="row-content">
+                        <div class="least-content">20 días</div>
+                        <h4 class="list-group-item-heading"><a href="#">Noticia 4</a></h4>
+                        <p class="list-group-item-text">Maecenas sed diam eget risus varius blandit.</p>
+                    </div>
+                </div>
+                <div class="list-group-separator"></div>
+
+                <div class="list-group-item">
+                    <div class="row-action-primary">
+                        <i class="material-icons">folder</i>
+                    </div>
+                    <div class="row-content">
+                        <div class="least-content">un mes</div>
+                        <h4 class="list-group-item-heading"><a href="#">Noticia 5</a></h4>
+                        <p class="list-group-item-text">Maecenas sed diam eget risus varius blandit.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="carreras" class="col-md-push-1 col-md-3">
+    <div class="panel panel-primary">
+        <div class="panel-heading"><h3>Carreras</h3></div>
+        <div class="panel-body">
+            <div>
+                <div class="list-group">
+                    <div class="list-group-item">
+
+                        <div class="row-content">
+                            <div class="action-secondary"><i class="material-icons" title="Más información">info</i></div>
+                            <span class="list-group-item-heading">San Silvestre</span>
+                            <p class="list-group-item-text">31/12/2017</p>
+                        </div>
+                    </div>
+                    <div class="list-group-separator"></div>
+                    <div class="list-group-item">
+
+                        <div class="row-content">
+                            <div class="action-secondary"><i class="material-icons" title="Más información">info</i></div>
+                            <span class="list-group-item-heading">San Silvestre</span>
+                            <p class="list-group-item-text">31/12/2017</p>
+                        </div>
+                    </div>
+                    <div class="list-group-separator"></div>
+                    <div class="list-group-item">
+
+                        <div class="row-content">
+                            <div class="action-secondary"><i class="material-icons" title="Más información">info</i></div>
+                            <span class="list-group-item-heading">San Silvestre</span>
+                            <p class="list-group-item-text">31/12/2017</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="tweets" class="col-md-push-1 col-md-3">
+
+    <div class="panel panel-primary">
+        <div class="panel-heading"><h3>Twitter</h3></div>
+        <div class="panel-body">
+            <div class="list-group">
+                <div class="list-group-item">
+                    <div class="row-picture">
+                        <img class="circle" src="http://lorempixel.com/56/56/people/1" title="Imagen Twitter">
+                    </div>
+                    <div class="row-content">
+                        <h4 class="list-group-item-heading">@usuario</h4>
+                        <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus.<br><small>Hace 2min.</small></p>
+                    </div>
+                </div>
+                <div class="list-group-separator"></div>
+                <div class="list-group-item">
+                    <div class="row-picture">
+                        <img class="circle" src="http://lorempixel.com/56/56/people/9" title="Imagen Twitter">
+                    </div>
+                    <div class="row-content">
+                        <h4 class="list-group-item-heading">@usuario</h4>
+                        <p class="list-group-item-text">Maecenas sed diam eget risus varius blandit.<br><small>Hace 2h.</small></p>
+                    </div>
+                </div>
+                <div class="list-group-separator"></div>
+                <div class="list-group-item">
+                    <div class="row-picture">
+                        <img class="circle" src="http://lorempixel.com/56/56/people/7" title="Imagen Twitter">
+                    </div>
+                    <div class="row-content">
+                        <h4 class="list-group-item-heading">@usuario</h4>
+                        <p class="list-group-item-text">Maecenas sed diam eget risus varius blandit.<br><small>Hace 3 días.</small></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':8080/livereload.js?snipver=1"></' + 'script>');</script>
+</body>
+<script>
+    $( document ).ready(function() {
+        $.material.init()
+        console.log( "listo!" );
+    });
+</script>
+<div class="col-md-12 panel panel-default" style="background-color:#009688 !important; padding: 0px 0px 0px 0px !important; color:white">
+    <div class="panel-body">
+        <div class="pull-left" style="display:block;">
+            <span>Contacto Ayuda</span>
+        </div>
+        <div class="pull-right">©2016 GoRunning</div>
+    </div>
+</div>
+
+
+</html>
