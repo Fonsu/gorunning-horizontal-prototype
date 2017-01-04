@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html>
 <head>
     <meta charset="UTF-8">
 
@@ -6,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Material Design fonts -->
-    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+    <link rel="stylesheet" href="/fonts/roboto.css" type="text/css">
     <link href="/fonts/material-icons.css" rel="stylesheet">
 
 
@@ -46,8 +47,6 @@
                         <li><a href="consejos.html">Consejos</a></li>
                         <li><a href="dietas.html">Dietas</a></li>
                         <li><a href="productos.html">Productos</a></li>
-                        <li class="divider"></li>
-                        <li><a href="javascript:void(0)">Separated link</a></li>
                     </ul>
                 </li>
                 <li><a href="calendario.html">Calendario</a></li>
@@ -83,8 +82,6 @@
                                 <input type="text" class="form-control" id="localidad" placeholder="Localidad">
                                 <span class="help-block">Puede introducir su ciudad o código postal</span>
                                 <br>
-                                </div>
-
                             </div>
                         </div>
                         <div class="form-group">
@@ -104,13 +101,13 @@
                                 <button type="submit" class="btn btn-primary">Filtrar</button>
                             </div>
                         </div>
-                    </fieldset>
+                        </fieldset>
                 </form>
             </div>
             <div id="source-button" class="btn btn-primary btn-xs" style="display: none;">&lt; &gt;</div>
         </div>
     </div>
-</div>
+    </div>
 <div id="tweets" class="col-md-push-1 col-md-4">
 
     <div class="panel panel-primary">
@@ -218,7 +215,19 @@
 <script>
     $( document ).ready(function() {
         $.material.init();
-        console.log( "listo!" );
     });
 </script>
+<footer>
+    <div class="col-md-12 panel panel-default" style="background-color:#009688 !important; margin: 0px 0px 0px 0px !important; color:white">
+        <div class="panel-body" id="footer-wrapper">
+            <div class="pull-left">
+                <div class="footer-list">
+                    <li>Contacto</li>
+                    <li>Ayuda</li>
+                </div>
+            </div>
+            <div class="pull-right">©2016 GoRunning</div>
+        </div>
+    </div>
+</footer>
 </html>

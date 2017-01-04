@@ -2,7 +2,18 @@
     padding: 10px;
     color: #777;
 }
-
 #custom-breadcrumb span {
     color: #000;
+}
+.footer-list {
+    list-style: none !important;
+}
+#footer-wrapper li{
+    float:left;
+    padding-right:2em;
+}
+@media only screen and (max-width: 400px) {
+    #footer-wrapper li{
+        padding-right:1em;
+    }
 }

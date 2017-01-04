@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html>
 <head>
     <meta charset="UTF-8">
 
@@ -6,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Material Design fonts -->
-    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+    <link rel="stylesheet" href="/fonts/roboto.css" type="text/css">
     <link href="/fonts/material-icons.css" rel="stylesheet">
 
 
@@ -21,6 +22,7 @@
     <!-- Bootstrap Material Design -->
     <link href="/css/bootstrap-material-design.min.css" rel="stylesheet">
     <link href="/css/ripples.min.css" rel="stylesheet">
+    <link href="/css/custom.css" rel="stylesheet">
 
     <title>GoRunning</title>
 </head>
@@ -40,14 +42,12 @@
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="noticias.html">Noticias</a></li>
                 <li class="active" class="dropdown">
-                    <a href="nutricion.html" data-target="#" class="dropdown-toggle" data-toggle="dropdown">Nutrición
+                    <a href="#" data-target="#" class="dropdown-toggle" data-toggle="dropdown">Nutrición
                         <b class="caret"></b></a>
                     <ul class="dropdown-menu">
                         <li><a href="consejos.html">Consejos</a></li>
                         <li><a href="dietas.html">Dietas</a></li>
                         <li><a href="productos.html">Productos</a></li>
-                        <li class="divider"></li>
-                        <li><a href="javascript:void(0)">Separated link</a></li>
                     </ul>
                 </li>
                 <li><a href="calendario.html">Calendario</a></li>
@@ -146,11 +146,23 @@
     </div>
 </div>
 <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':8080/livereload.js?snipver=1"></' + 'script>');</script>
+<footer>
+    <script>
+        $( document ).ready(function() {
+            $.material.init();
+        });
+    </script>
+    <div class="col-md-12 panel panel-default" style="background-color:#009688 !important; margin: 0 0 0 0 !important; color:white">
+        <div class="panel-body" id="footer-wrapper">
+            <div class="pull-left">
+                <ul class="footer-list">
+                    <li>Contacto</li>
+                    <li>Ayuda</li>
+                </ul>
+            </div>
+            <div class="pull-right">©2016 GoRunning</div>
+        </div>
+    </div>
+</footer>
 </body>
-<script>
-    $( document ).ready(function() {
-        $.material.init();
-        console.log( "listo!" );
-    });
-</script>
 </html>

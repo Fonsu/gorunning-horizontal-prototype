@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html>
 <head>
     <meta charset="UTF-8">
 
@@ -6,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Material Design fonts -->
-    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+    <link rel="stylesheet" href="/fonts/roboto.css" type="text/css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <script src="/js/jquery.min.js"></script>
@@ -20,6 +21,7 @@
     <!-- Bootstrap Material Design -->
     <link href="/css/bootstrap-material-design.css" rel="stylesheet">
     <link href="/css/ripples.min.css" rel="stylesheet">
+    <link href="/css/custom.css" rel="stylesheet">
 
     <title>GoRunning</title>
 </head>
@@ -45,26 +47,11 @@
                         <li><a href="consejos.html">Consejos</a></li>
                         <li><a href="dietas.html">Dietas</a></li>
                         <li><a href="productos.html">Productos</a></li>
-                        <li class="divider"></li>
-                        <li><a href="javascript:void(0)">Separated link</a></li>
                     </ul>
                 </li>
                 <li><a href="calendario.html">Calendario</a></li>
                 <li><a href="rutas.html">Rutas</a></li>
-                <li><a href="foro">Foro</a></li>
-                <!--<li class="dropdown">
-                    <a href="index.html" data-target="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown
-                        <b class="caret"></b></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="javascript:void(0)">Action</a></li>
-                        <li><a href="javascript:void(0)">Another action</a></li>
-                        <li><a href="javascript:void(0)">Something else here</a></li>
-                        <li class="divider"></li>
-                        <li class="dropdown-header">Dropdown header</li>
-                        <li><a href="javascript:void(0)">Separated link</a></li>
-                        <li><a href="javascript:void(0)">One more separated link</a></li>
-                    </ul>
-                </li>-->
+                <li><a href="foro.html">Foro</a></li>
             </ul>
             <form class="navbar-form navbar-right">
                 <div class="form-group">
@@ -74,7 +61,19 @@
         </div>
     </div>
 </div>
-
+<div class="col-md-10 col-md-push-1">
+    <div class="panel panel-primary">
+        <div class="panel-heading"><h3>Noticia destacada</h3></div>
+        <div class="panel-body">
+            <div class="jumbotron" style="background-color:white; padding: 0 0 0 0;">
+                <h2>Inscríbete a la Mitja Marató "Ciudad de Oliva" (Valencia)</h2>
+                <img class="img-responsive"src="/img/maraton.jpg"/>
+                <p><a class="btn btn-primary btn-lg">Más noticias</a></p>
+            </div>
+            <div id="source-button" class="btn btn-primary btn-xs" style="display: none;">&lt; &gt;</div>
+        </div>
+    </div>
+</div>
 <div id="noticias" class="col-md-push-1 col-md-7">
     <div class="panel panel-primary">
         <div class="panel-heading"><h3>Últimas noticias</h3></div>
@@ -177,7 +176,71 @@
         </div>
     </div>
 </div>
+<div id="foro" class="col-md-push-1 col-md-7">
+    <div class="panel panel-primary">
+        <div class="panel-heading"><h3>Últimos posts</h3></div>
+        <div class="panel-body">
+            <div class="list-group">
+                <div class="list-group-item">
+                    <div class="row-action-primary">
+                        <i class="material-icons">folder</i>
+                    </div>
+                    <div class="row-content">
+                        <div class="least-content">2m</div>
+                        <h4 class="list-group-item-heading"><a href="#">Post 1</a></h4>
+                        <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus.</p>
+                    </div>
+                </div>
+                <div class="list-group-separator"></div>
+                <div class="list-group-item">
+                    <div class="row-action-primary">
+                        <i class="material-icons">folder</i>
+                    </div>
+                    <div class="row-content">
+                        <div class="least-content">20m</div>
+                        <h4 class="list-group-item-heading"><a href="#">Post 2</a></h4>
+                        <p class="list-group-item-text">Maecenas sed diam eget risus varius blandit.</p>
+                    </div>
+                </div>
+                <div class="list-group-separator"></div>
+                <div class="list-group-item">
+                    <div class="row-action-primary">
+                        <i class="material-icons">folder</i>
+                    </div>
+                    <div class="row-content">
+                        <div class="least-content">2 días</div>
+                        <h4 class="list-group-item-heading"><a href="#">Post 3</a></h4>
+                        <p class="list-group-item-text">Maecenas sed diam eget risus varius blandit.</p>
+                    </div>
+                </div>
+                <div class="list-group-separator"></div>
 
+                <div class="list-group-item">
+                    <div class="row-action-primary">
+                        <i class="material-icons">folder</i>
+                    </div>
+                    <div class="row-content">
+                        <div class="least-content">20 días</div>
+                        <h4 class="list-group-item-heading"><a href="#">Post 4</a></h4>
+                        <p class="list-group-item-text">Maecenas sed diam eget risus varius blandit.</p>
+                    </div>
+                </div>
+                <div class="list-group-separator"></div>
+
+                <div class="list-group-item">
+                    <div class="row-action-primary">
+                        <i class="material-icons">folder</i>
+                    </div>
+                    <div class="row-content">
+                        <div class="least-content">un mes</div>
+                        <h4 class="list-group-item-heading"><a href="#">Post 5</a></h4>
+                        <p class="list-group-item-text">Maecenas sed diam eget risus varius blandit.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 <div id="tweets" class="col-md-push-1 col-md-3 hidden-xs">
     <div class="panel panel-primary">
         <div class="panel-heading"><h3>Twitter</h3></div>
@@ -185,7 +248,7 @@
             <div class="list-group">
                 <div class="list-group-item">
                     <div class="row-picture">
-                        <img class="circle" src="http://lorempixel.com/56/56/people/1" title="Imagen Twitter">
+                        <img class="circle" src="http://lorempixel.com/56/56/people/1" title="Imagen Twitter" alt="Imagen Twitter">
                     </div>
                     <div class="row-content">
                         <h4 class="list-group-item-heading">@usuario</h4>
@@ -195,7 +258,7 @@
                 <div class="list-group-separator"></div>
                 <div class="list-group-item">
                     <div class="row-picture">
-                        <img class="circle" src="http://lorempixel.com/56/56/people/9" title="Imagen Twitter">
+                        <img class="circle" src="http://lorempixel.com/56/56/people/9" title="Imagen Twitter" alt="Imagen Twitter">
                     </div>
                     <div class="row-content">
                         <h4 class="list-group-item-heading">@usuario</h4>
@@ -205,7 +268,7 @@
                 <div class="list-group-separator"></div>
                 <div class="list-group-item">
                     <div class="row-picture">
-                        <img class="circle" src="http://lorempixel.com/56/56/people/7" title="Imagen Twitter">
+                        <img class="circle" src="http://lorempixel.com/56/56/people/7" title="Imagen Twitter" alt="Imagen Twitter">
                     </div>
                     <div class="row-content">
                         <h4 class="list-group-item-heading">@usuario</h4>
@@ -218,21 +281,23 @@
 </div>
 
 <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':8080/livereload.js?snipver=1"></' + 'script>');</script>
-</body>
-<script>
-    $( document ).ready(function() {
-        $.material.init()
-        console.log( "listo!" );
-    });
-</script>
-<div class="col-md-12 panel panel-default" style="background-color:#009688 !important; padding: 0px 0px 0px 0px !important; color:white">
-    <div class="panel-body">
-        <div class="pull-left" style="display:block;">
-            <span>Contacto Ayuda</span>
+<footer>
+    <script>
+        $( document ).ready(function() {
+            $.material.init();
+        });
+    </script>
+    <div class="col-md-12 panel panel-default" style="background-color:#009688 !important; margin: 0 0 0 0 !important; color:white">
+        <div class="panel-body" id="footer-wrapper">
+            <div class="pull-left">
+                <ul class="footer-list">
+                    <li>Contacto</li>
+                    <li>Ayuda</li>
+                </ul>
+            </div>
+            <div class="pull-right">©2016 GoRunning</div>
         </div>
-        <div class="pull-right">©2016 GoRunning</div>
     </div>
-</div>
-
-
+</footer>
+</body>
 </html>
