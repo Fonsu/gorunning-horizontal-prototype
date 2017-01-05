@@ -17,3 +17,8 @@
         padding-right:1em;
     }
 }
+@media (max-width: 776px) and (min-width: 768px) {
+	div.navbar.navbar-default > div > div.navbar-collapse.navbar-warning-collapse.collapse input{		
+		font-size: 90%;
+	}
+}
