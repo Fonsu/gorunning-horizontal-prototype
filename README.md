@@ -32,6 +32,6 @@ Just serve it and you're good to go! :sweat_smile:
 
 * [Bootstrap](https://github.com/twbs/bootstrap)
 * [Bootstrap Material](https://github.com/FezVrasta/bootstrap-material-design)
-* [Bootstrap Material Datetimepicker] (https://github.com/T00rk/bootstrap-material-datetimepicker)
-* [Moment.js] (https://github.com/moment/moment)
-* [jQuery] (https://github.com/jquery/jquery)
+* [Bootstrap Material Datetimepicker](https://github.com/T00rk/bootstrap-material-datetimepicker)
+* [Moment.js](https://github.com/moment/moment)
+* [jQuery](https://github.com/jquery/jquery)
